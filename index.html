@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>timecode</title>
+    <script src="timecode.js"></script>
+</head>
+<body>
+    <script>
+        var seconds = '30942';
+        console.log(seconds.toHHMMSS());
+
+        var hhmmss = '08:35:42';
+        console.log(hhmmss.toSeconds());
+
+        var hhmmss1 = '08:35:41';
+        var hhmmss2 = '08:35:41';
+        if(timecodeCompare(hhmmss1, hhmmss2)){
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+    </script>
+</body>
+</html>
