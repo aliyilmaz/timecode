@@ -23,7 +23,9 @@ String.prototype.toHHMMSS = function () {
 }
 
 String.prototype.toSeconds = function () { 
-    const arr = this.split(":");
+    let arr = this.split(":");
+    if(arr.length < 2 ||  arr.length > 3){ return false; }
+    if(arr.length == 2 ){ arr[2] = '00'; }
     const seconds = arr[0]*3600+arr[1]*60+(+arr[2]);
     return seconds;
 }
