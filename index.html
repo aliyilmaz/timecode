@@ -11,17 +11,17 @@
 <body>
     Look at the console.
     <script>
-        var seconds = '30942';
-        console.log(seconds.toHHMMSS());
+        var seconds = '7320';
+        console.log(seconds.toTime());
 
-        var hhmmss = '08:35:42';
+        var hhmmss = '02:02:00';
         console.log(hhmmss.toSeconds());
 
-        hhmmss = '08:35'; // 08:35:00
+        hhmmss = '02:02'; // 02:02:00
         console.log(hhmmss.toSeconds());
 
-        var hhmmss1 = '08:35:41';
-        var hhmmss2 = '08:35:41';
+        var hhmmss1 = '02:02:00';
+        var hhmmss2 = '02:02:02';
         if(timecodeCompare(hhmmss1, hhmmss2)){
             console.log(true);
         } else {
